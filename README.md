@@ -6,18 +6,13 @@
 	
 	* [Common rules](#Common-rules)
 	* [Requirements and goals](#Requirements-and-goals)
-	
-2. [Part one - Libc functions] (#Part-one,-man-inspired-functions)
-	
-	* Lorem ipsum dolor sit amet
-	* Lorem ipsum dolor sit amet
-	
-3. [Part one - Libc functions] (#Part-one)
+
+2. [Part one - Libc functions] (#Part-one)
 
 	* Lorem ipsum dolor sit amet
 	* Lorem ipsum dolor sit amet
 
-4. [Part two - Additional functions] (#Part-two)
+3. [Part two - Additional functions] (#Part-two)
 	
 	* Lorem ipsum dolor sit amet
 	* Lorem ipsum dolor sit amet
