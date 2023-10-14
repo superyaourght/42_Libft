@@ -1,29 +1,30 @@
-# libft
+# libft 
 
 ## Contents
 
-1. [Introduction](#Introduction)
+1. [Introduction](#introduction)
 	
-	* [Common rules](#Common-rules)
-	* [Requirements and goals](#Requirements-and-goals)
+	* [Common rules](#common-rules)
+	* [Requirements and goals](#requirements-and-goals)
 
-2. [Part one - Libc functions] (#Part-one)
+2. [Part one - Libc functions](#part-one)
 
-	* Lorem ipsum dolor sit amet
-	* Lorem ipsum dolor sit amet
+	* [Characters functions](#char-fonc)
+	* [Memory functions](#mem-fonc)
+	* [Various string and memory functions](#var-fonc)
 
-3. [Part two - Additional functions] (#Part-two)
+3. [Part two - Additional functions](#part-two)
 	
 	* Lorem ipsum dolor sit amet
 	* Lorem ipsum dolor sit amet
 
 
-<a name="Introduction"></a>
+<a name="introduction"></a>
 ## Introduction
 
 The first project as a 42 student. The task is to create a librairy of functions that will be used in further C projects. It covers juggling with pointers, memory, strings and numbers. My version of libft received the grade of 100%.
 
-<a name="Common-rules"></a>
+<a name="common-rules"></a>
 ### Common rules
 
 * The project must be written in C.
@@ -38,7 +39,7 @@ The first project as a 42 student. The task is to create a librairy of functions
 
 * If the project requires a Makefile, it must include at least the rules $(NAME), all, clean, fclean, and re.
 
-<a name="Requirements-and-goals"></a>
+<a name="requirements-and-goals"></a>
 ### Requirements and goals
 
 * Global variables are prohibited.
@@ -55,32 +56,52 @@ The first project as a 42 student. The task is to create a librairy of functions
 
 * "libft.a" must be created at the root of your repository.
 
-<a name="Part-one"></a>
+<a name="part-one"></a>
 ## Part one - Libc functions
 
 In this first part, one must recode a set of functions from the Libc as described in their respective manual pages on the system. The functions should have the exact same prototype and behavior as the originals. The only difference is that their names should be prefixed with "ft\_" Therefore, strlen becomes ft\_strlen.
 
-It can be divided into three categories.
+It can be divided into three categories. <a name="char-fonc"></a>
 
-1. Characters functions that are primarely used for characters manipulation, verification and conversion. They are :
+1. **Characters functions** that are primarely used for characters manipulation, verification and conversion.
 
-* isalpha
-	
-```c
-int ft_isalpha(int c)
-{
-    if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-        return (1);
-    return (0);
-}
-```
-* isdigit
-* isalnum
-* isascii
-* isprint
-* toupper
-* tolower
+	* isalpha : tests if character is alphabetic.
+	* isdigit : tests for a decimal digit character.
+	* isalnum : tests if character is alphanumeric.
+	* isascii : tests if an ASCII character.
+	* isprint : test if character is printable.
+	* toupper : converts a lower-case letter to the corresponding upper-case letter.
+	* tolower : converts a upper-case letter to the corresponding lower-case letter. <a name="mem-fonc"></a>
 
 
-<a name="Part-two"></a>
+2. **Memory allocation fonctions** that use dynamic memory allocation. 
+
+	* memset : initializes a block of memory with a specified value.
+	* bzero : replaces the bytes of a memory block with zeros.
+	* memcpy : copies a block of memory from a source to a specified destination.
+	* memmove : same as memcpy but takes into account potential overlap with source and destination.
+	* strlcpy : copies a source string to a destination while limiting the copy length to prevent buffer overflows
+	* strlcat : concatenates a source string to a destination while respecting the maximum length of the destination.<a name="var-fonc"></a>
+
+3. **Various string and memory functions**
+
+	* strlen : calculates the length of a null-terminated string.
+	* strchr : searches for the first occurrence of a specified character in a string.
+	* strrchr : searches for the last occurrence of a specified character in a string.
+	* strncmp : compares the content of two strings up to a specified number of characters.
+	* memchr : searches for the first occurrence of a specified byte value within a block of memory.
+	* memcmp : compares the content of two memory blocks up to a specified number of bytes.
+	* strnstr : searches for the first occurrence of a substring within a given string while limiting the search length.
+	* atoi : converts a string representing an integer into an actual integer value.
+
+<a name="part-two"></a>
 ## Part two - Additional functions
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quam vel sem rhoncus, quis rhoncus dolor vehicula. Phasellus tincidunt, metus a luctus bibendum, tortor quam ultrices justo, sit amet varius mauris libero ac justo. Vivamus eu nunc in eros convallis iaculis. Nulla facilisi. Suspendisse at vehicula dui, non feugiat nulla. Sed fermentum odio in elit dignissim, sit amet cursus libero posuere. Curabitur tincidunt, quam id bibendum venenatis, justo urna tincidunt mi, id auctor justo nulla at sapien. Vestibulum scelerisque, mi eu sodales aliquet, mi dui sagittis sapien, eu sodales mi justo et odio. Sed vel sapien vel eros tempus aliquet.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quam vel sem rhoncus, quis rhoncus dolor vehicula. Phasellus tincidunt, metus a luctus bibendum, tortor quam ultrices justo, sit amet varius mauris libero ac justo. Vivamus eu nunc in eros convallis iaculis. Nulla facilisi. Suspendisse at vehicula dui, non feugiat nulla. Sed fermentum odio in elit dignissim, sit amet cursus libero posuere. Curabitur tincidunt, quam id bibendum venenatis, justo urna tincidunt mi, id auctor justo nulla at sapien. Vestibulum scelerisque, mi eu sodales aliquet, mi dui sagittis sapien, eu sodales mi justo et odio. Sed vel sapien vel eros tempus aliquet.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quam vel sem rhoncus, quis rhoncus dolor vehicula. Phasellus tincidunt, metus a luctus bibendum, tortor quam ultrices justo, sit amet varius mauris libero ac justo. Vivamus eu nunc in eros convallis iaculis. Nulla facilisi. Suspendisse at vehicula dui, non feugiat nulla. Sed fermentum odio in elit dignissim, sit amet cursus libero posuere. Curabitur tincidunt, quam id bibendum venenatis, justo urna tincidunt mi, id auctor justo nulla at sapien. Vestibulum scelerisque, mi eu sodales aliquet, mi dui sagittis sapien, eu sodales mi justo et odio. Sed vel sapien vel eros tempus aliquet.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quam vel sem rhoncus, quis rhoncus dolor vehicula. Phasellus tincidunt, metus a luctus bibendum, tortor quam ultrices justo, sit amet varius mauris libero ac justo. Vivamus eu nunc in eros convallis iaculis. Nulla facilisi. Suspendisse at vehicula dui, non feugiat nulla. Sed fermentum odio in elit dignissim, sit amet cursus libero posuere. Curabitur tincidunt, quam id bibendum venenatis, justo urna tincidunt mi, id auctor justo nulla at sapien. Vestibulum scelerisque, mi eu sodales aliquet, mi dui sagittis sapien, eu sodales mi justo et odio. Sed vel sapien vel eros tempus aliquet.
+
