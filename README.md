@@ -15,14 +15,26 @@
 
 3. [Part two - Additional functions](#part-two)
 	
-	* Lorem ipsum dolor sit amet
-	* Lorem ipsum dolor sit amet
+	* [String manipulation functions](#string-manip-fonc)
+	* [File descriptor output functions](#out-fonc)
 
+4. [Part three - Makefile and libft.h](#part-three)
+
+	* [Makefile](#makefile)
+ 	* [libft.h](#libft-h)
+
+5. [Conclusion](#conc)
 
 <a name="introduction"></a>
 ## Introduction
 
-The first project as a 42 student. The task is to create a librairy of functions that will be used in further C projects. It covers juggling with pointers, memory, strings and numbers. My version of libft received the grade of 100%.
+The first project as a 42 student. The task is to create a librairy of functions that will be used in further C projects. It covers juggling with pointers, memory, strings and numbers.
+
+The libft library is implemented from scratch, with a limited set of pre-existing functions. This encourages a deeper understanding of the fundamental operations within the C programming language. The library is meticulously crafted to maintain efficiency, robustness, and adherence to industry-standard programming practices.
+
+This README serves as a guide for understanding the contents of the libft library and how a 42 project works. It outlines the included functions, their purposes and the complementary files used to create and compile this project.
+
+My version of libft received the grade of 100%.
 
 <a name="common-rules"></a>
 ### Common rules
@@ -97,9 +109,44 @@ It can be divided into three categories. <a name="char-fonc"></a>
 <a name="part-two"></a>
 ## Part two - Additional functions
 
-The second part consists of the implementation of a number of functions that are not present in the libc, or that are there but in a different form. It focuses on string manipulation and dynamique memory allocation.
+The second part consists in the implementation of a number of functions that are not present in the libc, or that are there but in a different form. It focuses on string manipulation with dynamic memory allocation and output functions.<a name="string-manip-fonc"></a>
 
-* ft_substr : allocates and returns a substring from another string. The substring begins at index ’start’ and is of maximum size ’len’.
-* ft_strjoin : allocates and returns a new string, which is the result of the concatenation of ’s1’ and ’s2’.
-* ft_strtrim : allocates and returns a copy of a string with the characters specified removed from the beginning and the end of the string.
-* ft_split : allocates and returns an array of strings obtained by splitting a string using a character as a delimiter.
+1. **String manipulation functions**
+
+	* ft_substr : allocates and returns a substring from another string. The substring begins at index ’start’ and is of maximum size ’len’.
+	* ft_strjoin : allocates and returns a new string, which is the result of the concatenation of ’s1’ and ’s2’.
+	* ft_strtrim : allocates and returns a copy of a string with the characters specified removed from the beginning and the end of the string.
+	* ft_split : allocates and returns an array of strings obtained by splitting a string using a character as a delimiter.
+	* ft_itoa : returns a string representing the integer received as an argument. Negative numbers are handled.
+	* ft_strmapi : applies a function ’f’ to each character of a string ’s’ to create a new string resulting from successive applications of ’f’.<a name="out-fonc"></a>
+
+2. **File descriptor output functions**
+
+	* ft_putchar_fd : outputs a character to the given file descriptor.
+	* ft_putstr_fd : outputs a string  to the given file descriptor.
+ 	* ft_putendl_fd : outputs a string to the given file descriptor, followed by a newline.
+	* ft_putnbr_fd : outputs an integer to the given file descriptor.
+
+<a name="part-three"></a>
+## Part three - Makefile and libft.h
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quam vel sem rhoncus, quis rhoncus dolor vehicula. Phasellus tincidunt, metus a luctus bibendum, tortor quam ultrices justo, sit amet varius mauris libero ac justo. Vivamus eu nunc in eros convallis iaculis. Nulla facilisi. Suspendisse at vehicula dui, non feugiat nulla. Sed fermentum odio in elit dignissim, sit amet cursus libero posuere. Curabitur tincidunt, quam id bibendum venenatis, justo urna tincidunt mi, id auctor justo nulla at sapien. Vestibulum scelerisque, mi eu sodales aliquet, mi dui sagittis sapien, eu sodales mi justo et odio. Sed vel sapien vel eros tempus aliquet.<a name="makefile"></a>
+
+1. **Makefile**
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quam vel sem rhoncus, quis rhoncus dolor vehicula. Phasellus tincidunt, metus a luctus bibendum, tortor quam ultrices justo, sit amet varius mauris libero ac justo. Vivamus eu nunc in eros convallis iaculis. Nulla facilisi. Suspendisse at vehicula dui, non feugiat nulla. Sed fermentum odio in elit dignissim, sit amet cursus libero posuere. Curabitur tincidunt, quam id bibendum venenatis, justo urna tincidunt mi, id auctor justo nulla at sapien. Vestibulum scelerisque, mi eu sodales aliquet, mi dui sagittis sapien, eu sodales mi justo et odio. Sed vel sapien vel eros tempus aliquet.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quam vel sem rhoncus, quis rhoncus dolor vehicula. Phasellus tincidunt, metus a luctus bibendum, tortor quam ultrices justo, sit amet varius mauris libero ac justo. Vivamus eu nunc in eros convallis iaculis. Nulla facilisi. Suspendisse at vehicula dui, non feugiat nulla. Sed fermentum odio in elit dignissim, sit amet cursus libero posuere. Curabitur tincidunt, quam id bibendum venenatis, justo urna tincidunt mi, id auctor justo nulla at sapien. Vestibulum scelerisque, mi eu sodales aliquet, mi dui sagittis sapien, eu sodales mi justo et odio. Sed vel sapien vel eros tempus aliquet.<a name="libft-h"></a>
+
+2. **libft.h**
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quam vel sem rhoncus, quis rhoncus dolor vehicula. Phasellus tincidunt, metus a luctus bibendum, tortor quam ultrices justo, sit amet varius mauris libero ac justo. Vivamus eu nunc in eros convallis iaculis. Nulla facilisi. Suspendisse at vehicula dui, non feugiat nulla. Sed fermentum odio in elit dignissim, sit amet cursus libero posuere. Curabitur tincidunt, quam id bibendum venenatis, justo urna tincidunt mi, id auctor justo nulla at sapien. Vestibulum scelerisque, mi eu sodales aliquet, mi dui sagittis sapien, eu sodales mi justo et odio. Sed vel sapien vel eros tempus aliquet.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quam vel sem rhoncus, quis rhoncus dolor vehicula. Phasellus tincidunt, metus a luctus bibendum, tortor quam ultrices justo, sit amet varius mauris libero ac justo. Vivamus eu nunc in eros convallis iaculis. Nulla facilisi. Suspendisse at vehicula dui, non feugiat nulla. Sed fermentum odio in elit dignissim, sit amet cursus libero posuere. Curabitur tincidunt, quam id bibendum venenatis, justo urna tincidunt mi, id auctor justo nulla at sapien. Vestibulum scelerisque, mi eu sodales aliquet, mi dui sagittis sapien, eu sodales mi justo et odio. Sed vel sapien vel eros tempus aliquet.
+
+<a name="conc"></a>
+## Conclusion
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quam vel sem rhoncus, quis rhoncus dolor vehicula. Phasellus tincidunt, metus a luctus bibendum, tortor quam ultrices justo, sit amet varius mauris libero ac justo. Vivamus eu nunc in eros convallis iaculis. Nulla facilisi. Suspendisse at vehicula dui, non feugiat nulla. Sed fermentum odio in elit dignissim, sit amet cursus libero posuere. Curabitur tincidunt, quam id bibendum venenatis, justo urna tincidunt mi, id auctor justo nulla at sapien. Vestibulum scelerisque, mi eu sodales aliquet, mi dui sagittis sapien, eu sodales mi justo et odio. Sed vel sapien vel eros tempus aliquet.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quam vel sem rhoncus, quis rhoncus dolor vehicula. Phasellus tincidunt, metus a luctus bibendum, tortor quam ultrices justo, sit amet varius mauris libero ac justo. Vivamus eu nunc in eros convallis iaculis. Nulla facilisi. Suspendisse at vehicula dui, non feugiat nulla. Sed fermentum odio in elit dignissim, sit amet cursus libero posuere. Curabitur tincidunt, quam id bibendum venenatis, justo urna tincidunt mi, id auctor justo nulla at sapien. Vestibulum scelerisque, mi eu sodales aliquet, mi dui sagittis sapien, eu sodales mi justo et odio. Sed vel sapien vel eros tempus aliquet.
